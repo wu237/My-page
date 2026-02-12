@@ -7,7 +7,6 @@
       body {
         margin: 0;
       }
-      /* 按钮样式 */
       .appointment-btn {
         padding: 10px 25px;
         background-color: #2196F3;
@@ -25,17 +24,49 @@
 </head>
 <body>
   <div style="
-    background-color: #f1f1f1;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     padding: 40px;
   ">
-      <img src="ziyi.jpg" alt="卢子怡照片" width="80px" height="80px">
+
+      <img src="ziyi.jpg"
+           alt="卢子怡照片"
+           width="100px"
+           height="100px"
+           onclick="document.getElementById('info').style.display='block'"
+      >
+<head>
+    <style>
+        .info {
+            display: none;
+            margin-top: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="info" class="info">
+        <p>出生于北京市，从小学习成绩优异。</p>
+        <p>联系电话：12345678901</p>
+        <P>QQ:13245678</P>
+    </div>
+  </body>
+
+
   </div>
   <div style="
     max-width: 700px;
     margin: 30px auto;
     padding: 15px;
     line-height: 1.7;
+    font-family: 'Microsoft Sans Serif';
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 25px 6px rgba(0, 0, 0, 0.12);
+    background: white;
   ">
     <p>卢子怡</p>
     <p>教育背景 2024.09 - 至今 北京中医药大学 中医学专业 本科在读 系统学习中医基础理论、中医诊断学、中药学、方剂学、正常人体解剖学、生理学等核心课程，夯实中医药理论与医学基础，具备扎实的专业知识储备与中医思维。</p>
@@ -48,7 +79,6 @@
     font-size: 12px;
   ">
     <p>luziyi.page</p>
-    <!-- 新增挂号预约按钮 -->
     <button class="appointment-btn" onclick="window.location.href='appointment.html'">
       挂号预约
     </button>
