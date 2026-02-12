@@ -7,33 +7,51 @@
       body {
         margin: 0;
       }
-      </style>
-    </head>
-    <body>
-      <div style="
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 40px;
-      ">
-          <img src="./ziyi.jpg" alt="卢子怡照片" width="80px" height="80px">
-      </div>
-      <div style="
-        max-width: 700px;
-        margin: 30px auto;
-        padding: 15px;
-         line-height: 1.7;
-      ">
-        <p>卢子怡</p>
-        <p>教育背景 2024.09 - 至今 北京中医药大学 中医学专业 本科在读 系统学习中医基础理论、中医诊断学、中药学、方剂学、正常人体解剖学、生理学等核心课程，夯实中医药理论与医学基础，具备扎实的专业知识储备与中医思维。</p>
-        <p>熟练掌握中医四诊基本操作、经络腧穴认知、中药辨识与方剂配伍基础; 具备医学文献检索、整理与学习能力，熟悉中医药经典著作学习方法; 掌握基础临床护理、健康宣教与中医养生保健知识; 熟练使用Office办公软件，具备良好的医学文书书写能力</p>
-      </div>
-      <div style="
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 40px;
-        font-size: 12px;
-      ">
-        <p>luziyi.page</p>
-      </div>
-    </body>
+      /* 按钮样式 */
+      .appointment-btn {
+        padding: 10px 25px;
+        background-color: #2196F3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+      .appointment-btn:hover {
+        background-color: #1976D2;
+      }
+    </style>
+</head>
+<body>
+  <div style="
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+  ">
+      <img src="ziyi.jpg" alt="卢子怡照片" width="80px" height="80px">
+  </div>
+  <div style="
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 15px;
+    line-height: 1.7;
+  ">
+    <p>卢子怡</p>
+    <p>教育背景 2024.09 - 至今 北京中医药大学 中医学专业 本科在读 系统学习中医基础理论、中医诊断学、中药学、方剂学、正常人体解剖学、生理学等核心课程，夯实中医药理论与医学基础，具备扎实的专业知识储备与中医思维。</p>
+    <p>熟练掌握中医四诊基本操作、经络腧穴认知、中药辨识与方剂配伍基础; 具备医学文献检索、整理与学习能力，熟悉中医药经典著作学习方法; 掌握基础临床护理、健康宣教与中医养生保健知识; 熟练使用Office办公软件，具备良好的医学文书书写能力</p>
+  </div>
+  <div style="
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+  ">
+    <p>luziyi.page</p>
+    <!-- 新增挂号预约按钮 -->
+    <button class="appointment-btn" onclick="window.location.href='appointment.html'">
+      挂号预约
+    </button>
+  </div>
+</body>
 </html>
